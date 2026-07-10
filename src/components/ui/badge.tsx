@@ -28,6 +28,7 @@ export default function Badge({
           width={12}
           height={14}
           className="opacity-80"
+          style={{ width: "18px", height: "18px" }}
         />
       ) : null}
       <span className="text-[11px] font-medium uppercase tracking-[0.12em] text-white/70">
