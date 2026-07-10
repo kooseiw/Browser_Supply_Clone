@@ -2,18 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import NAV_LINKS from "@/common/constant/menu";
 import { FaXTwitter, FaYoutube } from "react-icons/fa6";
-import { InterFont } from "@/common/styles/font";
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 z-50 w-full">
-      <nav
-        className={`${InterFont.className} mx-auto flex h-20 max-w-7xl items-center justify-between px-5`}
-      >
-        {/* Logo */}
+    <header className="fixed top-0 z-50 w-full backdrop-blur-sm">
+      <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5">
         <Link
           href="/"
-          className="flex items-center gap-2 text-white hover:opacity-80 transition-opacity"
+          className="flex items-center gap-2 text-white transition-opacity hover:opacity-80"
         >
           <Image
             src="/icon/browser-supply-icon.avif"
@@ -27,7 +23,6 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Nav links */}
         <ul className="flex items-center gap-5">
           {NAV_LINKS.map(({ label, href }) => (
             <li key={href}>
@@ -38,7 +33,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Actions */}
         <div className="flex items-center gap-3">
           <Link
             href="https://x.com"
@@ -60,7 +54,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/bundle"
-            className="ml-2 rounded px-4 py-2 text-base font-medium text-white bg-black"
+            className="ml-2 rounded bg-black px-4 py-2 text-base font-medium text-white"
           >
             Bundle
           </Link>
