@@ -3,6 +3,8 @@ import Hero from "./hero";
 import Stats from "./stats";
 import Templates from "./templates";
 import FrameLines from "@/components/ui/frame-lines";
+import Benefits from "./benefits";
+import Framer from "./framer";
 
 export default function Homepage() {
   return (
@@ -24,6 +26,8 @@ export default function Homepage() {
       <Hero />
       <Stats />
       <Templates />
+      <Benefits />
+      <Framer />
     </div>
   );
 }
