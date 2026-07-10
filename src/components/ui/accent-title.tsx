@@ -6,11 +6,16 @@ type TitleSegment = {
 type AccentTitleProps = {
   segments: TitleSegment[];
   className?: string;
+  as?: "h1" | "h2" | "h3";
 };
 
-export default function AccentTitle({ segments, className }: AccentTitleProps) {
+export default function AccentTitle({
+  segments,
+  className,
+  as: Tag = "h1",
+}: AccentTitleProps) {
   return (
-    <h1 className={className}>
+    <Tag className={className}>
       {segments.map((segment, index) => {
         if (segment.text === "\n") {
           return <br key={index} />;
@@ -22,6 +27,6 @@ export default function AccentTitle({ segments, className }: AccentTitleProps) {
 
         return <span key={index}>{segment.text}</span>;
       })}
-    </h1>
+    </Tag>
   );
 }
