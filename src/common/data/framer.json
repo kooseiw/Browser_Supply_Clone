@@ -1,0 +1,32 @@
+{
+  "badge": "Framer",
+  "title": [
+    { "text": "Po", "italic": false },
+    { "text": "w", "italic": true },
+    { "text": "ered b", "italic": false },
+    { "text": "y", "italic": true },
+    { "text": " a si", "italic": false },
+    { "text": "m", "italic": true },
+    { "text": "p", "italic": true },
+    { "text": "l", "italic": true },
+    { "text": "e & f", "italic": false },
+    { "text": "l", "italic": true },
+    { "text": "e", "italic": true },
+    { "text": "x", "italic": true },
+    { "text": "ibl", "italic": false },
+    { "text": "e", "italic": true },
+    { "text": " ", "italic": false },
+    { "text": "w", "italic": true },
+    { "text": "e", "italic": true },
+    { "text": "b", "italic": true },
+    { "text": "si", "italic": false },
+    { "text": "t", "italic": true },
+    { "text": "e b", "italic": false },
+    { "text": "u", "italic": true },
+    { "text": "ilder", "italic": false }
+  ],
+  "description": "Packed with speed and powerful tools to help your site stand out. Design, personalize, and launch. All in one place with Framer.",
+  "primaryCta": "Browse templates",
+  "secondaryCta": "Explore Framer",
+  "video": "/assets/framer-video.mp4"
+}

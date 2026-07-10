@@ -1,0 +1,61 @@
+{
+  "badge": "Benefits",
+  "title": [
+    { "text": "P", "italic": false },
+    { "text": "r", "italic": true },
+    { "text": "ofess", "italic": false },
+    { "text": "i", "italic": true },
+    { "text": "o", "italic": true },
+    { "text": "n", "italic": true },
+    { "text": "al we", "italic": false },
+    { "text": "b", "italic": true },
+    { "text": "si", "italic": false },
+    { "text": "t", "italic": true },
+    { "text": "e, li", "italic": false },
+    { "text": "v", "italic": true },
+    { "text": "e be", "italic": false },
+    { "text": "f", "italic": true },
+    { "text": "o", "italic": true },
+    { "text": "r", "italic": true },
+    { "text": "e t", "italic": false },
+    { "text": "h", "italic": true },
+    { "text": "e w", "italic": false },
+    { "text": "ee", "italic": true },
+    { "text": "ke", "italic": false },
+    { "text": "n", "italic": true },
+    { "text": "d", "italic": false }
+  ],
+  "description": "Go live with a website that's premium just like your business. No code, no budget, just a few hours.",
+  "noCode": {
+    "title": "No coding or design experience required",
+    "description": "Easily make edits, customize colors, and swap content so you don't have to start from scratch.",
+    "video": "/assets/benefits-video.mp4"
+  },
+  "convert": {
+    "label": "Convert more",
+    "title": "Designed to turn web visitors into customers.",
+    "integrations": [
+      { "name": "Stripe", "src": "/icons/stripe-icon.png" },
+      { "name": "PayPal", "src": "/icons/paypal.png" },
+      { "name": "Cal.com", "src": "/icons/calcom-icon.avif" },
+      { "name": "Lemon Squeezy", "src": "/icons/lemon-squeezy.png" },
+      { "name": "Gumroad", "src": "/icons/gumroad.png" }
+    ]
+  },
+  "pricing": {
+    "title": "Building a high-quality website shouldn't cost you a fortune.",
+    "agency": {
+      "price": "$5,000 – $20,000",
+      "label": "Web designer / Agency"
+    },
+    "template": {
+      "price": "Starting at $99",
+      "label": "Framer template"
+    }
+  },
+  "tutorials": {
+    "title": "Step-by-step video tutorials included",
+    "description": "Each template comes with guided tutorials to help you from customization to launch.",
+    "video": "/assets/benefits-explain.mp4"
+  }
+}
