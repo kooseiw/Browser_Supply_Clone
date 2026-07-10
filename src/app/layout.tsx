@@ -1,5 +1,5 @@
 import "./globals.css";
-import { InterFont, Gambetta } from "@/common/styles/font";
+import { gambetta, inter } from "@/common/styles/font";
 import Layout from "@/components";
 
 export default function RootLayout({
@@ -10,9 +10,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${InterFont.className} ${Gambetta.className} h-full antialiased`}
+      className={`${inter.variable} ${gambetta.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col font-sans">
         <Layout>{children}</Layout>
       </body>
     </html>
