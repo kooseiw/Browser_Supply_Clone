@@ -9,14 +9,15 @@ export default function Navbar() {
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5">
         <Link
           href="/"
-          className="flex items-center gap-2 text-white transition-opacity hover:opacity-80"
+          className="flex items-center gap-3 text-white transition-opacity hover:opacity-80"
         >
           <Image
-            src="/icon/browser-supply-icon.avif"
+            src="/icons/browser-supply-icon.avif"
             alt="Browser.supply"
             width={16}
             height={16}
             className="rounded-sm"
+            style={{ width: "22px", height: "22px" }}
           />
           <span className="text-base font-semibold text-white">
             Browser.supply
