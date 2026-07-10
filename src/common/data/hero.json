@@ -1,0 +1,29 @@
+{
+  "badge": {
+    "label": "Framer Templates",
+    "iconSrc": "/icons/framer-icon.svg"
+  },
+  "title": [
+    { "text": "Webs", "italic": false },
+    { "text": "i", "italic": true },
+    { "text": "te te", "italic": false },
+    { "text": "m", "italic": true },
+    { "text": "pla", "italic": false },
+    { "text": "t", "italic": true },
+    { "text": "es", "italic": false },
+    { "text": "\n", "italic": false },
+    { "text": "d", "italic": true },
+    { "text": "e", "italic": false },
+    { "text": "si", "italic": false },
+    { "text": "g", "italic": true },
+    { "text": "n", "italic": false },
+    { "text": "e", "italic": true },
+    { "text": "d to co", "italic": false },
+    { "text": "n", "italic": true },
+    { "text": "ve", "italic": false },
+    { "text": "r", "italic": true },
+    { "text": "t", "italic": false }
+  ],
+  "description": "Launch your online business today using an easy-to-customize Framer website template without writing a single line of code.",
+  "cta": "Browse templates"
+}
