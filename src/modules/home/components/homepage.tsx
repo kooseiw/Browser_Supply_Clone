@@ -1,23 +1,29 @@
 import Image from "next/image";
 import Hero from "./hero";
 import Stats from "./stats";
+import Templates from "./templates";
 import FrameLines from "@/components/ui/frame-lines";
 
 export default function Homepage() {
   return (
     <div className="relative overflow-hidden">
-      <Image
-        src="/image/background-web.png"
-        alt=""
+      <div
         aria-hidden="true"
-        fill
-        className="scale-110 blur-3xl pointer-events-none select-none"
-        priority
-      />
+        className="pointer-events-none absolute inset-0 overflow-hidden select-none"
+      >
+        <Image
+          src="/assets/background-web.png"
+          alt=""
+          fill
+          priority
+          className="scale-150 object-[105%_50%] blur-2xl"
+        />
+      </div>
 
       <FrameLines />
       <Hero />
       <Stats />
+      <Templates />
     </div>
   );
 }
