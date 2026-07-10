@@ -1,0 +1,47 @@
+{
+  "title": [
+    { "text": "Pre", "italic": false },
+    { "text": "m", "italic": true },
+    { "text": "ium tem", "italic": false },
+    { "text": "p", "italic": true },
+    { "text": "lat", "italic": false },
+    { "text": "e", "italic": true },
+    { "text": "s b", "italic": false },
+    { "text": "u", "italic": true },
+    { "text": "ilt to dri", "italic": false },
+    { "text": "v", "italic": true },
+    { "text": "e ", "italic": false },
+    { "text": "r", "italic": true },
+    { "text": "esul", "italic": false },
+    { "text": "t", "italic": true },
+    { "text": "s", "italic": false }
+  ],
+  "description": "Pick a template, swap in your content, and go live. Your business website can be up and running this afternoon.",
+  "cta": "View all",
+  "items": [
+    {
+      "id": "selene",
+      "name": "Selene",
+      "category": "AI SAAS",
+      "price": "$129 USD",
+      "image": "/assets/selene-template.png",
+      "isNew": true
+    },
+    {
+      "id": "zenna",
+      "name": "Zenna",
+      "category": "Yoga Studio",
+      "price": "$129 USD",
+      "image": "/assets/zenna-template.png",
+      "isNew": false
+    },
+    {
+      "id": "traction",
+      "name": "Traction",
+      "category": "SMMA",
+      "price": "$129 USD",
+      "image": "/assets/traction-template.avif",
+      "isNew": false
+    }
+  ]
+}
