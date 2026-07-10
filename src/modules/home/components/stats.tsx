@@ -4,7 +4,7 @@ import { cn } from "@/common/utils/cn";
 
 export default function Stats() {
   return (
-    <section className="relative z-10 mx-auto mt-32 w-full max-w-7xl overflow-hidden rounded-lg bg-black/40">
+    <section className="relative z-10 mx-auto mt-32 w-full max-w-7xl overflow-hidden">
       <div className="relative aspect-video w-full">
         <video src={videoData.src} autoPlay muted loop playsInline />
       </div>
