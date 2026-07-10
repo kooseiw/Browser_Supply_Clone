@@ -17,7 +17,7 @@ export default function Badge({
   return (
     <div
       className={cn(
-        "inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-3 py-1.5 backdrop-blur-sm",
+        "inline-flex items-center gap-2 rounded-sm border border-white/10 bg-[#1f1f1f] px-3 py-2",
         className,
       )}
     >
@@ -31,7 +31,7 @@ export default function Badge({
           style={{ width: "18px", height: "18px" }}
         />
       ) : null}
-      <span className="text-[11px] font-medium uppercase tracking-[0.12em] text-white/70">
+      <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#a3a3a3]">
         {label}
       </span>
     </div>
