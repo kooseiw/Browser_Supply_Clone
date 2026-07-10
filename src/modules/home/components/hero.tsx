@@ -1,5 +1,5 @@
 import Badge from "@/components/ui/badge";
-import Button from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import AccentTitle from "@/components/ui/accent-title";
 import heroData from "@/common/data/hero.json";
 
@@ -23,7 +23,9 @@ export default function Hero() {
           {heroData.description}
         </p>
 
-        <Button>{heroData.cta}</Button>
+        <Button className="w-fit px-6 py-6 text-base font-semibold bg-white text-black">
+          {heroData.cta}
+        </Button>
       </div>
     </section>
   );

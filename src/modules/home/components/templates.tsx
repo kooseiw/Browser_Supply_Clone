@@ -1,7 +1,8 @@
 import AccentTitle from "@/components/ui/accent-title";
-import Button from "@/components/ui/button";
 import TemplateCard from "@/components/ui/template-card";
 import templatesData from "@/common/data/templates.json";
+import { FaArrowRight } from "react-icons/fa";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/common/utils/cn";
 
 export default function Templates() {
@@ -19,10 +20,10 @@ export default function Templates() {
           </p>
         </div>
 
-        <Button className="w-fit shrink-0">
+        <Button className="w-fit px-5 py-6 text-base font-semibold bg-white text-black">
           {templatesData.cta}
           <span aria-hidden="true" className="ml-2">
-            →
+            <FaArrowRight className="size-3" />
           </span>
         </Button>
       </div>
@@ -37,7 +38,8 @@ export default function Templates() {
             image={item.image}
             isNew={item.isNew}
             className={cn(
-              index < templatesData.items.length - 1 && "border-r border-white/10",
+              index < templatesData.items.length - 1 &&
+                "border-r border-white/10",
             )}
           />
         ))}
