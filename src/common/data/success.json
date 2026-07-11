@@ -1,0 +1,38 @@
+{
+  "badge": "Customer Success",
+  "title": [
+    { "text": "M", "italic": false },
+    { "text": "a", "italic": true },
+    { "text": "tt lau", "italic": false },
+    { "text": "n", "italic": true },
+    { "text": "ched ", "italic": false },
+    { "text": "h", "italic": false },
+    { "text": "i", "italic": true },
+    { "text": "s", "italic": false },
+    { "text": " ne", "italic": false },
+    { "text": "w", "italic": true },
+    { "text": "\n", "italic": false },
+    { "text": "w", "italic": false },
+    { "text": "e", "italic": true },
+    { "text": "bs", "italic": false },
+    { "text": "i", "italic": true },
+    { "text": "te ", "italic": false },
+    { "text": "i", "italic": false },
+    { "text": "n", "italic": true },
+    { "text": " j", "italic": false },
+    { "text": "u", "italic": true },
+    { "text": "st", "italic": false },
+    { "text": " 1 ho", "italic": false },
+    { "text": "u", "italic": true },
+    { "text": "r", "italic": false }
+  ],
+  "paragraphs": [
+    "From burning out on 12-hour gym shifts to running his own online coaching business, on his own terms.",
+    "Matt had tried the agency route before. Thousands of dollars later, he had a terrible site and zero control over it.",
+    "I showed him the right template. We sat in a café, he made the edits himself, and launched in 1 hour."
+  ],
+  "quote": "No design skills. No coding. Barely any laptop experience. Didn't need any.",
+  "primaryCta": "View template Matt used",
+  "secondaryCta": "View other customers' sites",
+  "video": "/assets/customer-success-video.mp4"
+}
