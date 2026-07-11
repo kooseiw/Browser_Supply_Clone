@@ -6,6 +6,7 @@ import FrameLines from "@/components/ui/frame-lines";
 import Benefits from "./benefits";
 import Framer from "./framer";
 import Process from "./process";
+import Success from "./success";
 
 export default function Homepage() {
   return (
@@ -30,6 +31,7 @@ export default function Homepage() {
       <Benefits />
       <Framer />
       <Process />
+      <Success />
     </div>
   );
 }
