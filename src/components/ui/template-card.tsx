@@ -20,7 +20,7 @@ export default function TemplateCard({
 }: TemplateCardProps) {
   return (
     <article className={cn("flex flex-col gap-5 p-8", className)}>
-      <div className="relative aspect-4/3 w-full overflow-hidden rounded-lg">
+      <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm">
         <Image
           src={image}
           alt={`${name} Framer template`}
