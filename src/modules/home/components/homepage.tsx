@@ -5,6 +5,7 @@ import Templates from "./templates";
 import FrameLines from "@/components/ui/frame-lines";
 import Benefits from "./benefits";
 import Framer from "./framer";
+import Process from "./process";
 
 export default function Homepage() {
   return (
@@ -28,6 +29,7 @@ export default function Homepage() {
       <Templates />
       <Benefits />
       <Framer />
+      <Process />
     </div>
   );
 }
