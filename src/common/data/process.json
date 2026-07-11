@@ -1,0 +1,52 @@
+{
+  "badge": "Process",
+  "title": [
+    { "text": "Go li", "italic": false },
+    { "text": "v", "italic": true },
+    { "text": "e ", "italic": false },
+    { "text": "i", "italic": true },
+    { "text": "n", "italic": true },
+    { "text": " ho", "italic": false },
+    { "text": "u", "italic": true },
+    { "text": "rs,", "italic": false },
+    { "text": "\n", "italic": false },
+    { "text": "not ", "italic": false },
+    { "text": "m", "italic": true },
+    { "text": "ont", "italic": false },
+    { "text": "h", "italic": true },
+    { "text": "s", "italic": true }
+  ],
+  "description": "Three steps. That\u2019s all it takes to get your website online. Pick a template, add your content, and hit publish.",
+  "steps": [
+    {
+      "id": "select-template",
+      "label": "Step 1",
+      "title": "Select a template",
+      "description": "Choose from the range of expert-crafted templates.",
+      "type": "images",
+      "images": [
+        "/assets/process-step1-image-1.avif",
+        "/assets/process-step1-image-2.avif",
+        "/assets/process-step1-image-3.avif",
+        "/assets/process-step1-image-4.avif",
+        "/assets/process-step1-image-5.avif"
+      ]
+    },
+    {
+      "id": "make-it-yours",
+      "label": "Step 2",
+      "title": "Make it yours",
+      "description": "Change text, customize colors, and swap images with ease.",
+      "type": "video",
+      "video": "/assets/process-step2-video.mp4"
+    },
+    {
+      "id": "go-live",
+      "label": "Step 3",
+      "title": "Go live instantly",
+      "description": "Launch your site in seconds with just one click. Fast, simple, and code-free.",
+      "type": "video",
+      "video": "/assets/process-step3-video.mp4"
+    }
+  ]
+}
