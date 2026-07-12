@@ -1,0 +1,58 @@
+{
+  "badge": "Pricing",
+  "title": [
+    { "text": "Nee", "italic": false },
+    { "text": "d", "italic": true },
+    { "text": " ", "italic": false },
+    { "text": "o", "italic": false },
+    { "text": "n", "italic": true },
+    { "text": "e tem", "italic": false },
+    { "text": "pl", "italic": false },
+    { "text": "a", "italic": true },
+    { "text": "te\no", "italic": false },
+    { "text": "r", "italic": true },
+    { "text": " all o", "italic": false },
+    { "text": "f", "italic": true },
+    { "text": " t", "italic": false },
+    { "text": "h", "italic": true },
+    { "text": "em?", "italic": false }
+  ],
+  "description": "Perfect for agencies and freelancers looking to deliver high-quality results at lightning speed.",
+  "plans": [
+    {
+      "id": "single",
+      "label": "One-time payment",
+      "name": "Single template",
+      "price": "$99",
+      "originalPrice": null,
+      "description": "Choose a template best suited for you.",
+      "features": [
+        "Instant access to chosen template",
+        "Lifetime template updates",
+        "3 months Framer Pro",
+        "Step-by-step video tutorials"
+      ],
+      "cta": "Browse templates",
+      "highlighted": false
+    },
+    {
+      "id": "bundle",
+      "label": "One-time payment",
+      "name": "Bundle",
+      "price": "$399",
+      "originalPrice": "$1,881",
+      "description": "Every template, unlimited sites. Build however you want.",
+      "features": [
+        "All current templates",
+        "Early access to all future templates",
+        "Lifetime template updates",
+        "Use on unlimited sites",
+        "3 months Framer Pro",
+        "Step-by-step video tutorials",
+        "Priority support"
+      ],
+      "cta": "Get the bundle",
+      "highlighted": true
+    }
+  ]
+}
