@@ -10,6 +10,7 @@ import Success from "./success";
 import Pricing from "./pricing";
 import Quiz from "./quiz";
 import Founder from "./founder";
+import Review from "./review";
 
 export default function Homepage() {
   return (
@@ -38,6 +39,7 @@ export default function Homepage() {
       <Pricing />
       <Quiz />
       <Founder />
+      <Review />
     </div>
   );
 }
