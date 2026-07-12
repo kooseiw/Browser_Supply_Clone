@@ -9,6 +9,7 @@ import Process from "./process";
 import Success from "./success";
 import Pricing from "./pricing";
 import Quiz from "./quiz";
+import Founder from "./founder";
 
 export default function Homepage() {
   return (
@@ -36,6 +37,7 @@ export default function Homepage() {
       <Success />
       <Pricing />
       <Quiz />
+      <Founder />
     </div>
   );
 }
