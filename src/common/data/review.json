@@ -1,0 +1,101 @@
+{
+  "title": [
+    { "text": "Tr", "italic": false },
+    { "text": "u", "italic": true },
+    { "text": "ste", "italic": false },
+    { "text": "d", "italic": true },
+    { "text": " b", "italic": false },
+    { "text": "y", "italic": true },
+    { "text": " 2", "italic": false },
+    { "text": "k", "italic": true },
+    { "text": "+ c", "italic": false },
+    { "text": "u", "italic": true },
+    { "text": "sto", "italic": false },
+    { "text": "m", "italic": true },
+    { "text": "ers\na", "italic": false },
+    { "text": "r", "italic": true },
+    { "text": "ou", "italic": false },
+    { "text": "n", "italic": true },
+    { "text": "d t", "italic": false },
+    { "text": "h", "italic": true },
+    { "text": "e ", "italic": false },
+    { "text": "g", "italic": true },
+    { "text": "lobe", "italic": false }
+  ],
+  "description": "Speed, simplicity, and results. That's what customers achieve with my Framer website templates.",
+  "cta": "See real customer websites",
+  "items": [
+    {
+      "id": "renan",
+      "quote": "Very nice. Intuitive, easy going, good to navigate. Just Awesome!",
+      "name": "Renan",
+      "avatar": "/assets/renan.avif"
+    },
+    {
+      "id": "emon",
+      "quote": "The best part is it's aesthetically pleasing and business focused.",
+      "name": "Emon",
+      "avatar": "/assets/emon.avif"
+    },
+    {
+      "id": "nic",
+      "quote": "This Framer template is excellent at elevating your online presence!",
+      "name": "Nic",
+      "avatar": "/assets/nic.avif"
+    },
+    {
+      "id": "widya",
+      "quote": "Beautiful design and is easy to set up! The tutorial helped me a lot.",
+      "name": "Widya",
+      "avatar": "/assets/widya.avif"
+    },
+    {
+      "id": "samar",
+      "quote": "The templates is so well designed and has a unique look to them.",
+      "name": "Samar",
+      "avatar": "/assets/samar.avif"
+    },
+    {
+      "id": "mark",
+      "quote": "The design is clean, easy to customize, professional, and versatile.",
+      "name": "Mark",
+      "avatar": "/assets/mark.avif"
+    },
+    {
+      "id": "aba",
+      "quote": "The template is excellent! It is super easy to use and very beautiful.",
+      "name": "Aba",
+      "avatar": "/assets/aba.avif"
+    },
+    {
+      "id": "nonso",
+      "quote": "One of the best templates. Very professional and easy to modify.",
+      "name": "Nonso",
+      "avatar": "/assets/nonso.avif"
+    },
+    {
+      "id": "roni",
+      "quote": "Very well-built and optimized template. Made with an excellent design eye.",
+      "name": "Roni",
+      "avatar": "/assets/roni.avif"
+    },
+    {
+      "id": "tarun",
+      "quote": "Super easy to customize and looked visually stunning at the same time!",
+      "name": "Tarun",
+      "avatar": "/assets/tarun.avif"
+    },
+    {
+      "id": "jacob",
+      "quote": "Brilliant template. Super well designed and easy to customise!",
+      "name": "Jacob",
+      "avatar": "/assets/jacob.avif"
+    },
+    {
+      "id": "seyed",
+      "quote": "An excellent template in terms of design & customizability.",
+      "name": "Seyed",
+      "avatar": "/assets/seyed.avif"
+    }
+  ]
+}
