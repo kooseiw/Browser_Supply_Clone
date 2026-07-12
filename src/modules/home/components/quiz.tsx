@@ -6,7 +6,7 @@ import { cn } from "@/common/utils/cn";
 import { FaArrowRight } from "react-icons/fa";
 
 const QUIZ_IMAGE_POSITIONS = [
-  "w-[70%] top-[-90%] left-[-10%] rotate-15",
+  "w-[70%] top-[-100%] left-[-7%] rotate-15",
   "w-[70%] top-[20%] left-[-20%] rotate-15",
   "w-[70%] top-[18%] right-[-25%] rotate-15",
 ] as const;
@@ -14,7 +14,7 @@ const QUIZ_IMAGE_POSITIONS = [
 export default function Quiz() {
   return (
     <section className="relative z-30 overflow-hidden bg-black">
-      <div className="relative mx-auto h-[560px] w-full max-w-[1540px] overflow-hidden">
+      <div className="relative mx-auto h-[650px] w-full max-w-[1540px] overflow-hidden">
         <div className="absolute inset-0">
           {quizData.images.map((src, i) => (
             <div
@@ -40,7 +40,7 @@ export default function Quiz() {
           className="absolute inset-0 z-10 bg-linear-to-r from-black/80 via-black/80 to-black/40"
         />
 
-        <div className="relative z-20 mx-auto flex h-[560px] w-full max-w-7xl items-end justify-between px-12 pb-16">
+        <div className="relative z-20 mx-auto flex h-[600px] w-full max-w-7xl items-end justify-between px-12 pb-16">
           <div className="flex flex-col">
             <Badge label={quizData.badge} className="mb-8 w-fit" />
 
