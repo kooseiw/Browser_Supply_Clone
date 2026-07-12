@@ -7,6 +7,7 @@ import Benefits from "./benefits";
 import Framer from "./framer";
 import Process from "./process";
 import Success from "./success";
+import Pricing from "./pricing";
 
 export default function Homepage() {
   return (
@@ -32,6 +33,7 @@ export default function Homepage() {
       <Framer />
       <Process />
       <Success />
+      <Pricing />
     </div>
   );
 }
