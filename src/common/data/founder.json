@@ -1,0 +1,20 @@
+{
+  "badge": "Founder",
+  "name": "Hey, I'm Ramish",
+  "role": "Designer & Creator",
+  "paragraphs": [
+    "When I started my business, I realised speed was everything. Getting a website live meant getting customers through the door.",
+    "Luckily, I knew how to design and build sites, so what could have taken weeks only took me hours.",
+    "That first week, I had my website live, and sales rolling in.",
+    "Now, I'm sharing my unfair advantage with other creative entrepreneurs so they can do the same.",
+    "Launch faster without the cost or complexity."
+  ],
+  "stats": [
+    { "value": "6+", "label": "Years building sites" },
+    { "value": "100+", "label": "Websites made" },
+    { "value": "$100k", "label": "Revenue made in Framer" },
+    { "value": "2k+", "label": "Customers worldwide" }
+  ],
+  "cta": "Book a call with me",
+  "video": "/assets/founder-video.mp4"
+}
