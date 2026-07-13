@@ -11,7 +11,7 @@ export default function Framer() {
         <LazyVideo src={framerData.video} className="size-full object-cover" />
       </div>
 
-      <div className="order-1 flex flex-col items-start px-5 md:order-2 md:px-8">
+      <div className="order-1 flex flex-col items-start px-8 md:order-2">
         <Badge label={framerData.badge} className="mb-6" />
 
         <AccentTitle

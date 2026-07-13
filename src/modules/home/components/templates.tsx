@@ -8,7 +8,7 @@ import { cn } from "@/common/utils/cn";
 export default function Templates() {
   return (
     <section className="relative z-10 mx-auto w-full max-w-[1440px] py-16 md:py-32">
-      <div className="mb-0 flex flex-col items-stretch gap-6 border-b border-white/10 px-5 pb-8 md:flex-row md:items-end md:justify-between md:gap-10 md:px-8 md:pb-12">
+      <div className="mb-0 flex flex-col items-stretch gap-6 border-b border-white/10 px-8 pb-8 md:flex-row md:items-end md:justify-between md:gap-10 md:px-8 md:pb-12">
         <div className="max-w-xl">
           <AccentTitle
             as="h2"

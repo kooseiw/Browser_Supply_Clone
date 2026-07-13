@@ -19,7 +19,7 @@ export default function TemplateCard({
   className,
 }: TemplateCardProps) {
   return (
-    <article className={cn("flex flex-col gap-5 p-5 md:p-8", className)}>
+    <article className={cn("flex flex-col gap-5 p-8", className)}>
       <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm">
         <Image
           src={image}

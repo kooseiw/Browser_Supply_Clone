@@ -1,21 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import footerData from "@/common/data/footer.json";
+import { cn } from "@/common/utils/cn";
 import { FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 export default function Footer() {
   return (
     <footer className="relative z-10">
-      <div className="mx-auto w-full max-w-[1440px] border-x border-black/50">
-        <div className="flex items-start justify-between gap-16 px-8 pt-20 pb-24">
-          <div className="max-w-[280px]">
+      <div className="mx-auto w-full max-w-[1440px] md:border-x md:border-black/50">
+        <div className="flex flex-col items-center gap-10 px-5 pt-16 pb-16 text-center md:flex-row md:items-start md:justify-between md:gap-16 md:px-8 md:pt-20 md:pb-24 md:text-left">
+          <div className="flex max-w-[280px] flex-col items-center md:items-start">
             <h2 className="mb-4 font-display text-3xl font-medium text-white">
               {footerData.brand}
             </h2>
-            <p className="mb-6 text-base leading-[1.7] text-muted">
+            <p className="mb-6 text-sm leading-[1.7] text-muted md:text-base">
               {footerData.tagline}
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center gap-4 md:justify-start">
               <Link
                 href={footerData.social[0].href}
                 target="_blank"
@@ -37,14 +38,22 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex gap-16">
+          <div className="flex flex-col items-center gap-5 md:flex-row md:gap-16">
             {footerData.linkColumns.map((column, columnIndex) => (
-              <ul key={columnIndex} className="flex flex-col gap-6">
+              <ul
+                key={columnIndex}
+                className="flex flex-col items-center gap-5 md:items-start md:gap-6"
+              >
                 {column.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-base font-semibold text-white transition-opacity hover:opacity-70"
+                      className={cn(
+                        "text-base text-white transition-opacity hover:opacity-70",
+                        columnIndex === 0
+                          ? "font-semibold"
+                          : "font-normal md:font-semibold",
+                      )}
                     >
                       {link.label}
                     </Link>
@@ -55,8 +64,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex items-center justify-between border-t border-white/10 px-8 py-6">
-          <p className="text-base text-[#ABABAB]">
+        <div className="flex flex-col items-center gap-4 border-t border-white/10 px-5 py-6 text-center md:flex-row md:justify-between md:gap-0 md:px-8 md:text-left">
+          <p className="text-sm text-[#ABABAB] md:text-base">
             {footerData.copyright.replace(
               "{year}",
               String(new Date().getFullYear()),
@@ -68,7 +77,7 @@ export default function Footer() {
           </p>
 
           <div className="flex items-center gap-2.5">
-            <span className="text-base text-[#ABABAB]">
+            <span className="text-sm text-[#ABABAB] md:text-base">
               {footerData.createdBy.label}
             </span>
             <Image
@@ -78,7 +87,7 @@ export default function Footer() {
               height={28}
               className="size-9 rounded-md object-cover"
             />
-            <span className="text-base font-semibold text-white">
+            <span className="text-sm font-semibold text-white md:text-base">
               {footerData.createdBy.name}
             </span>
           </div>

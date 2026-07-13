@@ -11,7 +11,7 @@ export default function Benefits() {
 
   return (
     <section className="relative z-30 mx-auto w-full max-w-[1440px] md:z-10">
-      <div className="mb-10 flex flex-col items-center px-5 text-center md:mb-16 md:px-8">
+      <div className="mb-10 flex flex-col items-center px-8 text-center md:mb-16">
         <Badge label={badge} className="mb-6" />
         <AccentTitle
           as="h2"
@@ -25,7 +25,7 @@ export default function Benefits() {
 
       <div className="grid grid-cols-1 border border-white/10 md:grid-cols-3">
         <div className="flex flex-col border-b border-white/10 md:border-r md:border-b-0">
-          <div className="flex flex-1 flex-col gap-3 p-5 md:p-8">
+          <div className="flex flex-1 flex-col gap-3 p-8">
             <h3 className="font-display text-3xl font-medium leading-tight text-white md:text-3xl">
               {noCode.title}
             </h3>
@@ -39,7 +39,7 @@ export default function Benefits() {
         </div>
 
         <div className="flex flex-col border-b border-white/10 md:border-r md:border-b-0">
-          <div className="flex flex-1 flex-col gap-5 border-b border-white/10 p-5 md:p-8">
+          <div className="flex flex-1 flex-col gap-5 border-b border-white/10 p-8">
             <div className="flex flex-wrap items-center gap-2">
               {convert.integrations.map((item) => (
                 <Image
@@ -66,7 +66,7 @@ export default function Benefits() {
             </p>
           </div>
 
-          <div className="flex flex-1 flex-col gap-5 p-5 md:p-8">
+          <div className="flex flex-1 flex-col gap-5 p-8">
             <p className="w-full text-base font-normal leading-snug text-white md:w-[300px]">
               {pricing.title}
             </p>
@@ -103,7 +103,7 @@ export default function Benefits() {
             className="absolute inset-0 size-full object-cover"
           />
           <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 flex flex-col gap-3 p-5 md:p-8">
+          <div className="absolute inset-x-0 bottom-0 flex flex-col gap-3 p-8">
             <h3 className="w-full max-w-[300px] font-display text-2xl font-medium leading-tight text-white md:w-[300px] md:text-3xl">
               {tutorials.title}
             </h3>

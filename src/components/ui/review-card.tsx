@@ -17,7 +17,10 @@ export default function ReviewCard({
 }: ReviewCardProps) {
   return (
     <article
-      className={cn("flex flex-col justify-between gap-8 p-6", className)}
+      className={cn(
+        "flex flex-col justify-between gap-6 p-8 md:gap-8 md:p-6",
+        className,
+      )}
     >
       <div>
         <span
@@ -26,25 +29,25 @@ export default function ReviewCard({
         >
           "
         </span>
-        <p className="font-display text-[28px] leading-[1.35] text-white">
+        <p className="w-[320px] md:w-full font-display text-3xl leading-[1.35] text-white md:text-[28px]">
           {quote}
         </p>
       </div>
 
       <div>
-        <div className="mb-5 flex items-center gap-2 text-white">
+        <div className="mb-5 flex items-center gap-1.5 text-white md:gap-2">
           {Array.from({ length: 5 }).map((_, index) => (
             <FaStar key={index} className="size-6" />
           ))}
         </div>
 
-        <div className="flex items-center gap-3 mt-7">
+        <div className="mt-5 flex items-center gap-3 md:mt-7">
           <Image
             src={avatar}
             alt={name}
             width={36}
             height={36}
-            className="size-10 rounded-md object-cover"
+            className="size-11 rounded-md object-cover md:size-10"
           />
           <span className="text-base text-[#ABABAB]">{name}</span>
         </div>
