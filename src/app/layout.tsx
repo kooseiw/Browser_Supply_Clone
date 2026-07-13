@@ -4,8 +4,7 @@ import Layout from "@/components";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
-
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export default function RootLayout({
   children,
@@ -15,7 +14,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", inter.variable, gambetta.variable, "font-sans", geist.variable)}
+      className={cn(
+        "h-full",
+        "antialiased",
+        inter.variable,
+        gambetta.variable,
+        "font-sans",
+        geist.variable,
+      )}
     >
       <body className="min-h-full flex flex-col font-sans">
         <Layout>{children}</Layout>
