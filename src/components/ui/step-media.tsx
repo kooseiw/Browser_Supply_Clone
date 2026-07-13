@@ -1,13 +1,14 @@
 import Image from "next/image";
 import processData from "@/common/data/process.json";
 import { cn } from "@/common/utils/cn";
+import LazyVideo from "@/components/ui/lazy-video";
 
 const STEP1_IMAGE_POSITIONS = [
-  "w-[65%] top-1 left-[-15%] rotate-20",
-  "w-[65%] top-3 right-[-25%] rotate-20",
-  "w-[75%] top-[45%] right-[-15%] rotate-20",
-  "w-[65%] bottom-[15%] left-[-30%] rotate-20",
-  "w-[75%] top-[95%] left-[20%] rotate-20",
+  "w-[65%] top-[-12%] left-[-8%] rotate-20",
+  "w-[75%] top-3 right-[-35%] rotate-20",
+  "w-[65%] top-[55%] right-[-5%] rotate-20",
+  "w-[75%] bottom-[15%] left-[-40%] rotate-20",
+  "w-[75%] top-[105%] left-[21%] rotate-20",
 ] as const;
 
 type Step = (typeof processData.steps)[number];
@@ -40,12 +41,8 @@ export default function StepMedia({ step }: { step: Step }) {
   if (step.type === "video" && step.video) {
     return (
       <div className="absolute inset-0">
-        <video
+        <LazyVideo
           src={step.video}
-          autoPlay
-          muted
-          loop
-          playsInline
           className="h-full w-full object-cover"
         />
       </div>

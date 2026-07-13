@@ -1,12 +1,13 @@
 import statsData from "@/common/data/stats.json";
 import videoData from "@/common/data/video.json";
 import { cn } from "@/common/utils/cn";
+import LazyVideo from "@/components/ui/lazy-video";
 
 export default function Stats() {
   return (
-    <section className="relative z-10 mx-auto mt-32 w-full max-w-7xl overflow-hidden">
+    <section className="relative z-10 mx-auto mt-32 w-full max-w-[1440px] overflow-hidden">
       <div className="relative aspect-video w-full">
-        <video src={videoData.src} autoPlay muted loop playsInline />
+        <LazyVideo src={videoData.src} className="size-full object-cover" />
       </div>
 
       <div className="grid grid-cols-1 border-t border-white/10 md:grid-cols-3">

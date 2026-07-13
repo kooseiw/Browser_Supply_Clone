@@ -30,21 +30,21 @@ export default function TemplateCard({
         />
       </div>
 
-      <div className="flex flex-col gap-2">
-        <div className="flex items-center gap-2">
+      <div className="flex flex-col gap-5">
+        <div className="flex items-center gap-3">
           <h3 className="font-display text-3xl font-medium text-white">
             {name}
           </h3>
           {isNew ? (
-            <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#33D478] bg-[#33D478]/15">
+            <span className="rounded px-2 py-0.5 text-sm font-semibold uppercase tracking-wide text-[#33D478] bg-[#33D478]/15">
               New
             </span>
           ) : null}
         </div>
 
-        <p className="text-xs font-medium uppercase tracking-[0.08em] text-white/50">
+        <p className="text-[13px] font-medium uppercase text-[#ABABAB]">
           {category}
-          <span className="mx-2 text-white/30">•</span>
+          <span className="mx-2 text-[#ABABAB]">•</span>
           {price}
         </p>
       </div>

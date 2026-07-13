@@ -56,7 +56,7 @@ export default function Quiz() {
             </p>
           </div>
 
-          <Button className="shrink-0 gap-2 bg-white px-6 py-6 text-sm font-semibold text-black">
+          <Button className="shrink-0 gap-2 bg-white px-6 py-6 text-base font-semibold text-black">
             {quizData.cta}
             <FaArrowRight className="size-3" />
           </Button>

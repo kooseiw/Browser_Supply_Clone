@@ -7,9 +7,9 @@ import { cn } from "@/common/utils/cn";
 
 export default function Templates() {
   return (
-    <section className="relative z-10 mx-auto w-full max-w-7xl py-32">
+    <section className="relative z-10 mx-auto w-full max-w-[1440px] py-32">
       <div className="mb-0 flex items-end justify-between gap-10 border-b border-white/10 px-8 pb-12">
-        <div className="max-w-2xl">
+        <div className="max-w-xl">
           <AccentTitle
             as="h2"
             segments={templatesData.title}

@@ -6,7 +6,7 @@ import heroData from "@/common/data/hero.json";
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen w-full flex-col items-center justify-center">
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center px-5 text-center">
+      <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col items-center px-5 text-center">
         <Badge
           className="mb-10"
           iconSrc={heroData.badge.iconSrc}

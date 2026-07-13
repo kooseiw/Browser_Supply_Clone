@@ -1,6 +1,7 @@
 import Image from "next/image";
 import AccentTitle from "@/components/ui/accent-title";
 import Badge from "@/components/ui/badge";
+import LazyVideo from "@/components/ui/lazy-video";
 import benefitsData from "@/common/data/benefits.json";
 import { FaArrowTrendUp } from "react-icons/fa6";
 
@@ -9,7 +10,7 @@ export default function Benefits() {
     benefitsData;
 
   return (
-    <section className="relative z-10 mx-auto w-full max-w-7xl">
+    <section className="relative z-10 mx-auto w-full max-w-[1440px]">
       <div className="mb-16 flex flex-col items-center px-8 text-center">
         <Badge label={badge} className="mb-6" />
         <AccentTitle
@@ -33,12 +34,8 @@ export default function Benefits() {
             </p>
           </div>
           <div className="relative mt-auto aspect-4/3 w-full overflow-hidden">
-            <video
+            <LazyVideo
               src={noCode.video}
-              autoPlay
-              muted
-              loop
-              playsInline
               className="size-full object-cover"
             />
           </div>
@@ -104,12 +101,8 @@ export default function Benefits() {
         </div>
 
         <div className="relative min-h-[560px] overflow-hidden">
-          <video
+          <LazyVideo
             src={tutorials.video}
-            autoPlay
-            muted
-            loop
-            playsInline
             className="absolute inset-0 size-full object-cover"
           />
           <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />

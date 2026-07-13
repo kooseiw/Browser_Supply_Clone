@@ -1,18 +1,15 @@
 import AccentTitle from "@/components/ui/accent-title";
 import Badge from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import LazyVideo from "@/components/ui/lazy-video";
 import framerData from "@/common/data/framer.json";
 
 export default function Framer() {
   return (
-    <section className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-2 items-center gap-16">
+    <section className="relative z-10 mx-auto grid w-full max-w-[1440px] grid-cols-2 items-center gap-16">
       <div className="relative aspect-square w-full overflow-hidden">
-        <video
+        <LazyVideo
           src={framerData.video}
-          autoPlay
-          muted
-          loop
-          playsInline
           className="size-full object-cover"
         />
       </div>

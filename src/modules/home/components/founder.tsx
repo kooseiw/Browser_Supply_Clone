@@ -1,19 +1,16 @@
 import Badge from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import LazyVideo from "@/components/ui/lazy-video";
 import { cn } from "@/common/utils/cn";
 import { FaArrowRight } from "react-icons/fa";
 import founderData from "@/common/data/founder.json";
 
 export default function Founder() {
   return (
-    <section className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-2 border-t border-white/10">
+    <section className="relative z-10 mx-auto grid w-full max-w-[1440px] grid-cols-2 border-t border-white/10">
       <div className="overflow-hidden">
-        <video
+        <LazyVideo
           src={founderData.video}
-          autoPlay
-          muted
-          loop
-          playsInline
           className="h-full w-full object-cover object-bottom"
         />
       </div>
@@ -61,7 +58,7 @@ export default function Founder() {
           ))}
         </div>
 
-        <Button className="w-full gap-2 py-6 rounded-none text-sm font-semibold bg-white text-black">
+        <Button className="w-full gap-2 py-6 rounded-none text-base font-semibold bg-white text-black">
           {founderData.cta}
           <FaArrowRight className="size-3" />
         </Button>

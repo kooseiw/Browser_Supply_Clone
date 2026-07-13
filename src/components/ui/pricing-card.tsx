@@ -96,7 +96,7 @@ export default function PricingCard({
 
         <Button
           className={cn(
-            "mt-auto w-full rounded-sm py-6 text-sm font-semibold",
+            "mt-auto w-full rounded-sm py-6 text-base font-semibold",
             plan.highlighted
               ? "bg-white text-black"
               : "bg-white/8 text-white hover:bg-white/12",

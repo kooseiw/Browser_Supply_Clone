@@ -5,7 +5,7 @@ import PricingCard from "@/components/ui/pricing-card";
 
 export default function Pricing() {
   return (
-    <section className="relative z-10 mx-auto w-full max-w-7xl border-t border-white/10">
+    <section className="relative z-10 mx-auto w-full max-w-[1440px] border-t border-white/10">
       <div className="flex flex-col items-center px-8 py-24 text-center">
         <Badge label={pricingData.badge} className="mb-6" />
 
