@@ -6,44 +6,47 @@ import successData from "@/common/data/success.json";
 
 export default function Success() {
   return (
-    <section className="relative z-10 mx-auto grid w-full max-w-[1440px] grid-cols-2 border-t border-white/10">
-      <div className="flex flex-col justify-center px-12 py-20">
-        <Badge label={successData.badge} className="mb-8 w-fit" />
+    <section className="relative z-30 mx-auto grid w-full max-w-[1440px] grid-cols-1 border-t border-white/10 md:z-10 md:grid-cols-2">
+      <div className="flex flex-col justify-center px-5 py-12 md:px-12 md:py-20">
+        <Badge label={successData.badge} className="ml-2 mb-6 w-fit md:mb-8" />
 
         <AccentTitle
           as="h2"
           segments={successData.title}
-          className="mb-8 font-display text-[48px] font-medium leading-[1.1] text-white"
+          className="mb-6 font-display text-[33px] px-3 md:px-0 font-medium leading-[1.1] text-white md:mb-8 md:text-[48px]"
         />
 
-        <div className="w-[420px] mb-6 flex flex-col gap-4">
+        <div className="mb-6 flex w-full flex-col gap-4 max-w-[340px] md:max-w-[420px] px-3 md:px-0">
           {successData.paragraphs.map((paragraph) => (
-            <p key={paragraph} className="text-base leading-[1.7] text-muted">
+            <p
+              key={paragraph}
+              className="text-sm leading-[1.7] text-muted md:text-base"
+            >
               {paragraph}
             </p>
           ))}
         </div>
 
-        <blockquote className="w-[300px] mb-10 border-l-2 border-white/30 pl-4">
-          <p className="text-base leading-[1.6] text-white">
+        <blockquote className="mb-8 w-full border-l-2 border-white/30 pl-4 md:mb-10 md:w-[300px]">
+          <p className="text-sm leading-[1.6] text-white md:text-base">
             {successData.quote}
           </p>
         </blockquote>
 
-        <div className="flex items-center gap-3">
-          <Button className="w-fit px-5 py-6 text-base font-semibold bg-white text-black">
+        <div className="flex w-full flex-col gap-3 md:w-auto md:flex-row md:items-center">
+          <Button className="w-full px-5 py-6 text-base font-semibold bg-white text-black md:w-fit">
             {successData.primaryCta}
           </Button>
-          <Button className="w-fit px-5 py-6 text-base font-semibold bg-[#1a1a1a] text-white">
+          <Button className="w-full px-5 py-6 text-base font-semibold bg-[#1a1a1a] text-white md:w-fit">
             {successData.secondaryCta}
           </Button>
         </div>
       </div>
 
-      <div className="overflow-hidden">
+      <div className="mx-5 mb-5 aspect-4/3 overflow-hidden bg-black md:mx-0 md:mb-0 md:aspect-auto md:h-full md:bg-transparent">
         <LazyVideo
           src={successData.video}
-          className="h-full w-full object-cover object-center"
+          className="h-full w-full object-cover"
         />
       </div>
     </section>

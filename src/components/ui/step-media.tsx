@@ -16,7 +16,7 @@ type Step = (typeof processData.steps)[number];
 export default function StepMedia({ step }: { step: Step }) {
   if (step.type === "images" && step.images) {
     return (
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 origin-top scale-90 md:origin-center md:scale-100">
         {step.images.map((src, i) => (
           <div
             key={src}
@@ -30,7 +30,7 @@ export default function StepMedia({ step }: { step: Step }) {
               alt={`${step.title} preview ${i + 1}`}
               fill
               className="object-cover"
-              sizes="25vw"
+              sizes="(max-width: 768px) 100vw, 25vw"
             />
           </div>
         ))}

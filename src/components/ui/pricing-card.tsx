@@ -42,8 +42,8 @@ export default function PricingCard({
   return (
     <div
       className={cn(
-        "relative flex flex-col overflow-hidden border-t border-white/10 p-10",
-        !isLast && "border-r border-white/10",
+        "relative flex flex-col overflow-hidden border-t border-white/10 p-8 md:p-10",
+        !isLast && "border-b border-white/10 md:border-r md:border-b-0",
       )}
     >
       {plan.highlighted && (
@@ -55,37 +55,41 @@ export default function PricingCard({
             src="/assets/background-web.png"
             alt=""
             fill
-            sizes="50vw"
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover object-center"
           />
         </div>
       )}
 
       <div className="relative z-10 flex flex-1 flex-col">
-        <p className="mb-6 text-sm uppercase text-[#ABABAB]">{plan.label}</p>
+        <p className="mb-4 text-xs uppercase text-[#ABABAB] md:mb-6 md:text-sm">
+          {plan.label}
+        </p>
 
-        <div className="mb-3 flex items-end justify-between gap-4">
-          <h3 className="font-display text-5xl font-medium leading-none text-white">
+        <div className="mb-3 flex items-end justify-between gap-5 md:gap-4 mt-5 md:mt-0">
+          <h3 className="font-display text-3xl font-medium leading-none text-white md:text-5xl">
             {plan.name}
           </h3>
-          <div className="flex items-baseline gap-2.5 shrink-0">
-            <span className="font-display text-5xl font-medium leading-none text-white">
+          <div className="flex shrink-0 items-baseline gap-2 md:gap-2.5">
+            <span className="font-display text-3xl font-medium leading-none text-white md:text-5xl">
               {plan.price}
             </span>
             {plan.originalPrice && (
-              <span className="text-3xl text-[#ABABAB] line-through">
+              <span className="text-xl text-[#ABABAB] line-through md:text-3xl">
                 {plan.originalPrice}
               </span>
             )}
           </div>
         </div>
 
-        <p className="mb-8 text-base leading-[1.6] text-muted">
+        <p className="mb-6 max-w-[180px] md:max-w-none text-sm leading-[1.6] text-muted md:mb-8 md:text-base">
           {plan.description}
         </p>
 
-        <p className="mb-4 text-sm uppercase text-[#ABABAB]">Included:</p>
-        <ul className="mb-10 flex flex-col gap-3">
+        <p className="mb-4 text-xs uppercase text-[#ABABAB] md:text-sm">
+          Included:
+        </p>
+        <ul className="mb-8 flex flex-col gap-3 md:mb-10">
           {plan.features.map((feature) => (
             <li key={feature} className="flex items-center gap-3">
               <FeatureIcon feature={feature} />
