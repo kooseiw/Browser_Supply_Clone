@@ -1,0 +1,29 @@
+{
+  "brand": "Browser.supply",
+  "tagline": "Launch your online business with a premium Framer website template.",
+  "social": [
+    { "label": "X (Twitter)", "href": "https://x.com" },
+    { "label": "YouTube", "href": "https://youtube.com" }
+  ],
+  "linkColumns": [
+    [
+      { "label": "Templates", "href": "/templates" },
+      { "label": "Live examples", "href": "/live-examples" },
+      { "label": "Bundle", "href": "/bundle" },
+      { "label": "Blog", "href": "/blog" }
+    ],
+    [
+      { "label": "Quiz", "href": "/quiz" },
+      { "label": "Support", "href": "/support" },
+      { "label": "Privacy", "href": "/privacy" }
+    ]
+  ],
+  "copyright": "© 2026 browser.supply.",
+  "copyrightHighlight": "Framer",
+  "copyrightSuffix": " website templates",
+  "createdBy": {
+    "label": "Created by",
+    "name": "Ramish Aziz",
+    "avatar": "/assets/aziz.avif"
+  }
+}
