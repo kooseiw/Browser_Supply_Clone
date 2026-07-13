@@ -55,6 +55,7 @@ export default function PricingCard({
             src="/assets/background-web.png"
             alt=""
             fill
+            sizes="50vw"
             className="object-cover object-center"
           />
         </div>

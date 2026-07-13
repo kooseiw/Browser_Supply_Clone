@@ -52,9 +52,10 @@ export default function Benefits() {
                   key={item.name}
                   src={item.src}
                   alt={item.name}
-                  width={40}
-                  height={40}
+                  width={500}
+                  height={500}
                   className="rounded-lg"
+                  style={{ width: "40px", height: "40px" }}
                 />
               ))}
             </div>
