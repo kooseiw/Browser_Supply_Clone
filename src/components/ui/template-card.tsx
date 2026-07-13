@@ -19,20 +19,20 @@ export default function TemplateCard({
   className,
 }: TemplateCardProps) {
   return (
-    <article className={cn("flex flex-col gap-5 p-8", className)}>
+    <article className={cn("flex flex-col gap-5 p-5 md:p-8", className)}>
       <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm">
         <Image
           src={image}
           alt={`${name} Framer template`}
           fill
           className="object-cover object-top"
-          sizes="33vw"
+          sizes="(max-width: 768px) 100vw, 33vw"
         />
       </div>
 
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-3 md:gap-5">
         <div className="flex items-center gap-3">
-          <h3 className="font-display text-3xl font-medium text-white">
+          <h3 className="font-display text-2xl font-medium text-white md:text-3xl">
             {name}
           </h3>
           {isNew ? (
