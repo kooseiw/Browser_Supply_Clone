@@ -18,7 +18,7 @@
       { "label": "Privacy", "href": "/privacy" }
     ]
   ],
-  "copyright": "© 2026 browser.supply.",
+  "copyright": "© {year} browser.supply.",
   "copyrightHighlight": "Framer",
   "copyrightSuffix": " website templates",
   "createdBy": {
