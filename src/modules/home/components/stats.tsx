@@ -5,11 +5,11 @@ import LazyVideo from "@/components/ui/lazy-video";
 
 export default function Stats() {
   return (
-    <section className="relative z-10 mx-auto w-full max-w-[1440px] overflow-hidden md:mt-32">
+    <section className="relative z-10 mx-auto w-full max-w-[1440px] overflow-hidden md:mt-6 lg:mt-32">
       <div className="relative aspect-video w-full">
         <LazyVideo
           src={videoData.src}
-          className="size-full object-contain md:object-cover"
+          className="size-full object-contain lg:object-cover"
         />
       </div>
 

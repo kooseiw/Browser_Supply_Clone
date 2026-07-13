@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="relative z-10">
       <div className="mx-auto w-full max-w-[1440px] md:border-x md:border-black/50">
-        <div className="flex flex-col items-center gap-10 px-5 pt-16 pb-16 text-center md:flex-row md:items-start md:justify-between md:gap-16 md:px-8 md:pt-20 md:pb-24 md:text-left">
+        <div className="flex flex-col items-center gap-10 px-5 pt-16 pb-16 text-center md:flex-row md:items-start md:justify-between md:gap-16 md:px-10 md:pt-20 md:pb-24 md:text-left">
           <div className="flex max-w-[280px] flex-col items-center md:items-start">
             <h2 className="mb-4 font-display text-3xl font-medium text-white">
               {footerData.brand}
@@ -38,12 +38,9 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-5 md:flex-row md:gap-16">
+          <div className="flex flex-col items-center gap-5 md:flex-row md:items-start md:gap-16">
             {footerData.linkColumns.map((column, columnIndex) => (
-              <ul
-                key={columnIndex}
-                className="flex flex-col items-center gap-5 md:items-start md:gap-6"
-              >
+              <ul key={columnIndex} className="flex flex-col gap-5 md:gap-6">
                 {column.map((link) => (
                   <li key={link.href}>
                     <Link

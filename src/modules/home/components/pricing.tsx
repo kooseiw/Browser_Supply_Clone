@@ -12,7 +12,7 @@ export default function Pricing() {
         <AccentTitle
           as="h2"
           segments={pricingData.title}
-          className="mb-5 w-full max-w-[300px] font-display text-[50px] font-medium leading-[1.05] text-white md:max-w-none md:w-[650px] md:text-[79.2px]"
+          className="mb-5 w-full max-w-[300px] font-display text-[50px] font-medium leading-[1.05] text-white md:max-w-none md:w-[500px] lg:w-[650px] md:text-[60px] lg:text-[79.2px]"
         />
 
         <p className="max-w-[300px] md:max-w-sm text-sm leading-[1.7] text-muted md:text-base">

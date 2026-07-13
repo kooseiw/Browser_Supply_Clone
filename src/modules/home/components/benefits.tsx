@@ -10,13 +10,13 @@ export default function Benefits() {
     benefitsData;
 
   return (
-    <section className="relative z-30 mx-auto w-full max-w-[1440px] md:z-10">
+    <section className="relative z-30 mx-auto w-full max-w-[1440px] md:z-10 mt-0 md:mt-10 lg:mt-0">
       <div className="mb-10 flex flex-col items-center px-8 text-center md:mb-16">
         <Badge label={badge} className="mb-6" />
         <AccentTitle
           as="h2"
           segments={title}
-          className="mb-4 max-w-[300px] md:max-w-[750px] font-display text-[50px] font-medium leading-[1.1] text-white md:text-[72px]"
+          className="mb-4 max-w-[300px] md:max-w-[600px] lg:max-w-[750px] font-display text-[50px] font-medium leading-[1.1] text-white md:text-[60px] lg:text-[72px]"
         />
         <p className="max-w-md text-sm font-normal leading-[1.7] text-muted md:text-base">
           {description}
@@ -25,11 +25,11 @@ export default function Benefits() {
 
       <div className="grid grid-cols-1 border border-white/10 md:grid-cols-3">
         <div className="flex flex-col border-b border-white/10 md:border-r md:border-b-0">
-          <div className="flex flex-1 flex-col gap-3 p-8">
-            <h3 className="font-display text-3xl font-medium leading-tight text-white md:text-3xl">
+          <div className="flex flex-1 flex-col gap-3 p-8 md:gap-4 md:p-5 lg:gap-3 lg:p-8">
+            <h3 className="max-w-[280px] font-display text-3xl font-medium leading-tight text-white md:max-w-[280px] md:text-[26px] md:leading-[1.2] lg:max-w-none lg:text-3xl lg:leading-tight">
               {noCode.title}
             </h3>
-            <p className="max-w-[320px] md:max-w-full text-sm leading-[1.7] text-muted md:text-base">
+            <p className="max-w-[320px] text-sm leading-[1.7] text-muted md:max-w-[180px] md:text-[13px] md:leading-[1.65] lg:max-w-full lg:text-base lg:leading-[1.7]">
               {noCode.description}
             </p>
           </div>
@@ -39,17 +39,16 @@ export default function Benefits() {
         </div>
 
         <div className="flex flex-col border-b border-white/10 md:border-r md:border-b-0">
-          <div className="flex flex-1 flex-col gap-5 border-b border-white/10 p-8">
+          <div className="flex flex-1 flex-col gap-5 border-b border-white/10 p-8 md:gap-4 md:p-5 lg:gap-5 lg:p-8">
             <div className="flex flex-wrap items-center gap-2">
               {convert.integrations.map((item) => (
                 <Image
                   key={item.name}
                   src={item.src}
                   alt={item.name}
-                  width={500}
-                  height={500}
-                  className="rounded-lg"
-                  style={{ width: "40px", height: "40px" }}
+                  width={40}
+                  height={40}
+                  className="size-10 rounded-lg md:size-7 lg:size-10"
                 />
               ))}
             </div>
@@ -66,8 +65,8 @@ export default function Benefits() {
             </p>
           </div>
 
-          <div className="flex flex-1 flex-col gap-5 p-8">
-            <p className="w-full text-base font-normal leading-snug text-white md:w-[300px]">
+          <div className="flex flex-1 flex-col gap-5 p-8 md:gap-4 md:p-5 lg:gap-5 lg:p-8">
+            <p className="w-full text-base font-normal leading-snug text-white md:text-sm lg:w-[300px] lg:text-base">
               {pricing.title}
             </p>
 
@@ -97,17 +96,17 @@ export default function Benefits() {
           </div>
         </div>
 
-        <div className="relative min-h-[420px] overflow-hidden bg-black md:bg-transparent md:min-h-[560px]">
+        <div className="relative min-h-[420px] overflow-hidden bg-black md:bg-transparent md:min-h-[400px] lg:min-h-[560px]">
           <LazyVideo
             src={tutorials.video}
             className="absolute inset-0 size-full object-cover"
           />
           <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 flex flex-col gap-3 p-8">
-            <h3 className="w-full max-w-[300px] font-display text-2xl font-medium leading-tight text-white md:w-[300px] md:text-3xl">
+          <div className="absolute inset-x-0 bottom-0 flex flex-col gap-3 p-8 md:gap-2 md:p-5 lg:gap-3 lg:p-8">
+            <h3 className="w-full max-w-[300px] font-display text-2xl font-medium leading-tight text-white md:max-w-[160px] md:text-[22px] md:leading-[1.2] lg:w-[300px] lg:max-w-none lg:text-3xl lg:leading-tight">
               {tutorials.title}
             </h3>
-            <p className="w-full max-w-[330px] text-sm leading-[1.7] text-[#ABABAB] md:w-[330px] md:text-base">
+            <p className="w-full max-w-[330px] text-sm leading-[1.7] text-[#ABABAB] md:max-w-[180px] md:text-[13px] md:leading-[1.65] lg:w-[330px] lg:max-w-none lg:text-base lg:leading-[1.7]">
               {tutorials.description}
             </p>
           </div>

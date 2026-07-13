@@ -6,6 +6,14 @@ import { cn } from "@/common/utils/cn";
 import { FaArrowRight } from "react-icons/fa";
 
 const MOBILE_REVIEW_IDS = ["renan", "samar", "roni"] as const;
+const TABLET_REVIEW_IDS = [
+  "renan",
+  "emon",
+  "samar",
+  "mark",
+  "roni",
+  "tarun",
+] as const;
 
 export default function Review() {
   return (
@@ -15,7 +23,7 @@ export default function Review() {
           <AccentTitle
             as="h2"
             segments={reviewData.title}
-            className="max-w-[300px] md:max-w-2xl mb-5 font-display text-[35px] font-medium leading-[1.1] text-white md:text-[56px]"
+            className="mb-5 max-w-[300px] font-display text-[35px] font-medium leading-[1.1] text-white md:max-w-2xl md:text-[50px] lg:text-[56px]"
           />
           <p className="max-w-sm text-sm font-normal leading-[1.7] text-muted md:text-base">
             {reviewData.description}
@@ -28,12 +36,16 @@ export default function Review() {
         </Button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {reviewData.items.map((item, index) => {
           const mobileIndex = MOBILE_REVIEW_IDS.indexOf(
             item.id as (typeof MOBILE_REVIEW_IDS)[number],
           );
+          const tabletIndex = TABLET_REVIEW_IDS.indexOf(
+            item.id as (typeof TABLET_REVIEW_IDS)[number],
+          );
           const isMobileVisible = mobileIndex !== -1;
+          const isTabletVisible = tabletIndex !== -1;
 
           return (
             <ReviewCard
@@ -42,13 +54,21 @@ export default function Review() {
               name={item.name}
               avatar={item.avatar}
               className={cn(
-                !isMobileVisible && "hidden md:flex",
+                !isMobileVisible && "hidden",
+                isTabletVisible ? "md:flex" : "md:hidden",
+                "lg:flex",
                 isMobileVisible &&
                   mobileIndex < MOBILE_REVIEW_IDS.length - 1 &&
                   "border-b border-white/10",
-                index % 4 !== 3 && "md:border-r md:border-white/10",
-                index < reviewData.items.length - 4 &&
+                isTabletVisible &&
+                  tabletIndex % 2 === 0 &&
+                  "md:border-r md:border-white/10",
+                isTabletVisible &&
+                  tabletIndex < TABLET_REVIEW_IDS.length - 2 &&
                   "md:border-b md:border-white/10",
+                index % 4 !== 3 && "lg:border-r lg:border-white/10",
+                index < reviewData.items.length - 4 &&
+                  "lg:border-b lg:border-white/10",
               )}
             />
           );

@@ -42,7 +42,7 @@ export default function PricingCard({
   return (
     <div
       className={cn(
-        "relative flex flex-col overflow-hidden border-t border-white/10 p-8 md:p-10",
+        "relative flex flex-col overflow-hidden border-t border-white/10 p-8 md:p-6 lg:p-10",
         !isLast && "border-b border-white/10 md:border-r md:border-b-0",
       )}
     >
@@ -67,11 +67,11 @@ export default function PricingCard({
         </p>
 
         <div className="mb-3 flex items-end justify-between gap-5 md:gap-4 mt-5 md:mt-0">
-          <h3 className="font-display text-3xl font-medium leading-none text-white md:text-5xl">
+          <h3 className="font-display text-3xl font-medium leading-none text-white md:text-4xl lg:text-5xl">
             {plan.name}
           </h3>
           <div className="flex shrink-0 items-baseline gap-2 md:gap-2.5">
-            <span className="font-display text-3xl font-medium leading-none text-white md:text-5xl">
+            <span className="font-display text-3xl font-medium leading-none text-white md:text-4xl lg:text-5xl">
               {plan.price}
             </span>
             {plan.originalPrice && (
