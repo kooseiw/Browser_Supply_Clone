@@ -25,7 +25,9 @@ export default function Homepage() {
       <Benefits />
       <RevealGroup>
         <Framer />
-        <Process />
+      </RevealGroup>
+      <Process />
+      <RevealGroup>
         <Success />
       </RevealGroup>
       <Pricing />

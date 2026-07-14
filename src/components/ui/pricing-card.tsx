@@ -1,6 +1,5 @@
 import { cn } from "@/common/utils/cn";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import pricingData from "@/common/data/pricing.json";
 import {
   IconBrowser,
@@ -49,16 +48,9 @@ export default function PricingCard({
       {plan.highlighted && (
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 select-none opacity-30 blur-2xl"
-        >
-          <Image
-            src="/assets/background-web.png"
-            alt=""
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover object-center"
-          />
-        </div>
+          className="pointer-events-none absolute inset-0 select-none bg-cover bg-center opacity-30 blur-2xl"
+          style={{ backgroundImage: "url(/assets/background-web.png)" }}
+        />
       )}
 
       <div className="relative z-10 flex flex-1 flex-col">

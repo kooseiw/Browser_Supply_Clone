@@ -23,6 +23,8 @@ export default function Layout({ children }: Props) {
             alt=""
             fill
             priority
+            loading="eager"
+            fetchPriority="high"
             sizes="100vw"
             className="scale-150 object-[70%_50%] blur-2xl md:object-[105%_50%]"
           />
