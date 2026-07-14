@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Browser.supply Clone
 
-## Getting Started
+Landing page clone of [browser.supply](https://browser.supply/) using Next.js, TypeScript, and Tailwind. Content comes from JSON files in `src/common/data/`.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Additional Questions
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. If you use JSON data, how would you structure it to support future scalability and maintainability?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I split content by section (`hero.json`, `pricing.json`, etc.) so changes stay small and easy to find. Each item has a clear `id` and consistent fields. Components only read the data — they don’t hardcode copy. Later, if we need a CMS or API, we can swap the data source without rewriting the UI.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. If you decide to create your own API, which technology or framework would you use and why?
 
-## Learn More
+For this project I’d start with Next.js API routes, since everything is already in one app and easy to deploy. If the backend grows (auth, payments, more logic), I’d move to a separate Node/TypeScript API with a real database like PostgreSQL.
 
-To learn more about Next.js, take a look at the following resources:
+### 3. How would you configure a custom domain (for example, www.clientwebsite.com) to point to your deployed project on Vercel?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Add the domain in Vercel project settings, then set the DNS records they give you (usually a CNAME for `www`). After DNS updates, Vercel handles SSL automatically. I’d also set a redirect so either `www` or the root domain is the main one.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 4. If your project requires an admin panel to manage the website content, what technologies and approaches would you choose?
 
-## Deploy on Vercel
+For a marketing site, a headless CMS (like Sanity) is usually enough — editors update content without touching code. If we need a custom admin, I’d build protected pages in Next.js with auth, and store content in a database with a simple draft/publish flow.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 5. What techniques would you use to ensure the website loads quickly even on slow internet connections?
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Serve as much as possible as static pages, compress assets, and lazy-load heavy media like images and videos below the fold. Keep the first screen light, use `next/image`, and avoid loading big scripts too early.
+
+### 6. If you implement a form, how would you securely send the data to the backend server?
+
+Send data over HTTPS with a POST request. Validate again on the server (don’t trust the client), keep API keys on the server only, and add basic rate limiting or bot protection for public forms.
+
+### 7. What strategies do you use to optimize images for performance without sacrificing quality?
+
+Use `next/image` for resizing and modern formats, export assets at a reasonable size before upload, and lazy-load anything that’s not above the fold. Give images proper dimensions so the layout doesn’t jump while they load.
