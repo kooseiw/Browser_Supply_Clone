@@ -35,10 +35,10 @@
     "label": "Convert more",
     "title": "Designed to turn web visitors into customers.",
     "integrations": [
-      { "name": "Stripe", "src": "/icons/stripe-icon.png" },
+      { "name": "Lemon Squeezy", "src": "/icons/lemon-squeezy.png" },
       { "name": "PayPal", "src": "/icons/paypal.png" },
       { "name": "Cal.com", "src": "/icons/calcom-icon.avif" },
-      { "name": "Lemon Squeezy", "src": "/icons/lemon-squeezy.png" },
+      { "name": "Stripe", "src": "/icons/stripe-icon.png" },
       { "name": "Gumroad", "src": "/icons/gumroad.png" }
     ]
   },
