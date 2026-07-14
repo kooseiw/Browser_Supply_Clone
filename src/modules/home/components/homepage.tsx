@@ -10,6 +10,7 @@ import Pricing from "./pricing";
 import Quiz from "./quiz";
 import Founder from "./founder";
 import Review from "./review";
+import { RevealGroup } from "@/components/ui/reveal";
 
 export default function Homepage() {
   return (
@@ -17,11 +18,16 @@ export default function Homepage() {
       <FrameLines />
       <Hero />
       <Stats />
-      <Templates />
+
+      <RevealGroup>
+        <Templates />
+      </RevealGroup>
       <Benefits />
-      <Framer />
-      <Process />
-      <Success />
+      <RevealGroup>
+        <Framer />
+        <Process />
+        <Success />
+      </RevealGroup>
       <Pricing />
       <Quiz />
       <Founder />

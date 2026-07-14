@@ -37,7 +37,7 @@ export default function Quiz() {
             <div
               key={src}
               className={cn(
-                "absolute aspect-square md:aspect-4/3 overflow-hidden rounded-lg shadow-xl",
+                "absolute aspect-square overflow-hidden rounded-lg shadow-xl md:aspect-4/3",
                 QUIZ_IMAGE_POSITIONS[i].mobile,
                 QUIZ_IMAGE_POSITIONS[i].tablet,
                 QUIZ_IMAGE_POSITIONS[i].desktop,

@@ -7,7 +7,7 @@ import founderData from "@/common/data/founder.json";
 
 export default function Founder() {
   return (
-    <section className="relative mx-auto grid w-full max-w-[1440px] grid-cols-1 border-t border-white/10 md:z-10 md:grid-cols-2 md:items-stretch">
+    <section className="relative mx-auto grid w-full max-w-[1440px] grid-cols-1 border-t border-white/10 md:grid-cols-2 md:items-stretch">
       <div className="relative z-30 order-2 aspect-square overflow-hidden md:z-auto md:order-1 md:aspect-auto md:min-h-[640px] lg:min-h-0">
         <LazyVideo
           src={founderData.video}
@@ -61,7 +61,7 @@ export default function Founder() {
           ))}
         </div>
 
-        <Button className="relative z-30 w-full gap-2 rounded-none bg-white py-6 text-base font-semibold text-black md:z-auto">
+        <Button className="relative z-30 w-full gap-2 rounded-none bg-white py-6 text-base font-semibold text-black">
           {founderData.cta}
           <FaArrowRight className="size-3" />
         </Button>

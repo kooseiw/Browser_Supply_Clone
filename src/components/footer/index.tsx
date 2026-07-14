@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 import footerData from "@/common/data/footer.json";
 import { cn } from "@/common/utils/cn";
 import { FaXTwitter, FaYoutube } from "react-icons/fa6";
@@ -77,13 +80,24 @@ export default function Footer() {
             <span className="text-sm text-[#ABABAB] md:text-base">
               {footerData.createdBy.label}
             </span>
-            <Image
-              src={footerData.createdBy.avatar}
-              alt={footerData.createdBy.name}
-              width={28}
-              height={28}
-              className="size-9 rounded-md object-cover"
-            />
+            <motion.span
+              className="inline-flex origin-center will-change-transform"
+              animate={{ rotate: [-14, 14] }}
+              transition={{
+                duration: 1.6,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "mirror",
+              }}
+            >
+              <Image
+                src={footerData.createdBy.avatar}
+                alt={footerData.createdBy.name}
+                width={28}
+                height={28}
+                className="size-9 rounded-md object-cover"
+              />
+            </motion.span>
             <span className="text-sm font-semibold text-white md:text-base">
               {footerData.createdBy.name}
             </span>

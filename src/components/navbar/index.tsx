@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useLenis } from "lenis/react";
 import NAV_LINKS from "@/common/constant/menu";
 import { Menu, X } from "lucide-react";
 import { FaXTwitter, FaYoutube } from "react-icons/fa6";
@@ -10,13 +11,22 @@ import { cn } from "@/common/utils/cn";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const lenis = useLenis();
 
   useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "";
+    if (isOpen) {
+      lenis?.stop();
+      document.body.style.overflow = "hidden";
+    } else {
+      lenis?.start();
+      document.body.style.overflow = "";
+    }
+
     return () => {
+      lenis?.start();
       document.body.style.overflow = "";
     };
-  }, [isOpen]);
+  }, [isOpen, lenis]);
 
   return (
     <header className="fixed top-0 z-50 w-full">

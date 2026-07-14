@@ -42,7 +42,7 @@ export default function PricingCard({
   return (
     <div
       className={cn(
-        "relative flex flex-col overflow-hidden border-t border-white/10 p-8 md:p-6 lg:p-10",
+        "relative flex h-full flex-col overflow-hidden border-t border-white/10 p-8 md:p-6 lg:p-10",
         !isLast && "border-b border-white/10 md:border-r md:border-b-0",
       )}
     >
